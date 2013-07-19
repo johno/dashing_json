@@ -63,6 +63,33 @@ And, then call the `dashing_json` method in your view:
 
 That's it, your json is now dashing.
 
+## Customization
+
+Overriding the default colors of the syntax highlighting is simple since they're just variables. If you're using scss, and would like to customize the styles, you can add the following before you import the stylesheet in `plugins/_dashing_json.scss`:
+
+```scss
+$dashing-json-key-color:     $your-color;
+$dashing-json-string-color:  $your-color;
+$dashing-json-number-color:  $your-color;
+$dashing-json-boolean-color: $your-color;
+
+@import "dashing_json";
+```
+
+Be sure to import this file in your `application.css.scss`.
+
+If you aren't using sass, the selectors would be something like: 
+
+```css
+.dashing-json .key,
+.dashing-json .null,
+.dashing-json .string,
+.dashing-json .boolean,
+.dashing-json .number {
+  /* custom styling here */
+}
+```
+
 ## Contributing
 
 1. Fork it
