@@ -54,11 +54,11 @@ class ModelController < ApplicationController
 And, then call the `dashing_json` method in your view:
 
 ```erb
-# ...
+<%= # ... %>
 
 <%= dashing_json(@json_blob) %>
 
-# ...
+<%= # ... %>
 ```
 
 That's it, your json is now dashing.
