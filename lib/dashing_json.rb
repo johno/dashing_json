@@ -1,5 +1,9 @@
 require "dashing_json/version"
 
 module DashingJson
-  # Your code goes here...
+  include ViewHelpers
 end
+
+defined?(Rails::Railtie) ?
+  require('dashing_json/railtie') :
+  raise('dashing_json requires Rails::Railtie')
