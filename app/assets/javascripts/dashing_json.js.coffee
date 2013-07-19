@@ -15,7 +15,7 @@ json =
         if(typeof jsonData != 'string') 
           jsonData = JSON.stringify(jsonData, undefined, 2)
         jsonData = jsonData.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-        $('.parsed-json').append(json.doSyntaxHighlighting(jsonData))
+        $('.dashing-json').append(json.doSyntaxHighlighting(jsonData))
   
   doSyntaxHighlighting: (jsonData) ->
     jsonData.replace /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, (match) -> 
