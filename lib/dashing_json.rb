@@ -1,4 +1,5 @@
-require "dashing_json/version"
+require 'dashing_json/version'
+require 'dashing_json/engine'
 
 module DashingJson
   include ViewHelpers
