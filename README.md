@@ -2,6 +2,10 @@
 
 Make your json absolutely dashing in your rails views.
 
+Dashing JSON uses a `dashing-json` data element to store the JSON string, which is then parsed into a `ul` with specific `li` elements and corresponding classes: key, string, boolean, null, and number.
+
+It comes with default styling so your JSON blob is sure to look dashing right out of the box.
+
 ## Installation
 
 Add this line to your application's Gemfile:
