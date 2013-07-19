@@ -1,6 +1,6 @@
 # Dashing JSON
 
-Make your json absolutely dashing in your rails views.
+Make your JSON absolutely dashing in your rails views.
 
 Dashing JSON uses a `dashing-json` data element to store the JSON string, which is then parsed into a `ul` with specific `li` elements and corresponding classes: key, string, boolean, null, and number.
 
@@ -58,7 +58,7 @@ And, include the scripts with the following in your `application.js`
 
 ## Usage
 
-Now, you simply need to instantiate the json blob in you controller:
+Now, you simply need to instantiate the JSON blob in you controller:
 
 ```ruby
 class ModelController < ApplicationController
@@ -83,7 +83,7 @@ And, then call the `dashing_json` method in your view:
 <%= # ... %>
 ```
 
-That's it, your json is now dashing.
+That's it, your JSON is now dashing.
 
 ## Customization
 
