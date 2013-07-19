@@ -9,13 +9,13 @@ $ ->
   
 json =
   syntaxHighlight: ->
-    for jsonElem in $('.dashing-json')
+    for jsonElem in $('.dashing-json-raw')
       do (jsonElem) ->
         jsonData = $(jsonElem).attr('data-dashing-json')
         if(typeof jsonData != 'string') 
           jsonData = JSON.stringify(jsonData, undefined, 2)
         jsonData = jsonData.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-        $('.dashing-json').append(json.doSyntaxHighlighting(jsonData))
+        $('.dashing-json-parsed').append(json.doSyntaxHighlighting(jsonData))
   
   doSyntaxHighlighting: (jsonData) ->
     jsonData.replace /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, (match) -> 
