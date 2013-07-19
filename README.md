@@ -36,23 +36,29 @@ And, include the scripts with the following in your `application.js`
 
 ## Usage
 
-No, you simply need to instantiate the json blob in you controller:
+Now, you simply need to instantiate the json blob in you controller:
 
 ```ruby
 class ModelController < ApplicationController
 
 # ...
+
   def show
     @model = Model.find(params[:id])
     @json_blob = get_json_blob(@model)
   end
-#...
+
+# ...
 ```
 
 And, then call the `dashing_json` method in your view:
 
 ```erb
+# ...
+
 <%= dashing_json(@json_blob) %>
+
+# ...
 ```
 
 That's it, your json is now dashing.
