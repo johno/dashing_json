@@ -18,7 +18,7 @@ Or install it yourself as:
 
     $ gem install dashing_json
 
-### Next, you need to require the `.js.coffee` and `.css.scss` assets:
+#### Next, you need to require the `.js.coffee` and `.css.scss` assets:
 
 If you're using sprockets, add the following to your `application.css`:
 
