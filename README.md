@@ -6,6 +6,24 @@ Dashing JSON uses a `dashing-json` data element to store the JSON string, which 
 
 It comes with default styling so your JSON blob is sure to look dashing right out of the box.
 
+### Before
+```
+{"data": { "key": null, "can_read": false } }
+```
+
+### After
+
+```json
+{
+  "data": {
+    "key": null,
+    "can_read": false
+  }
+}
+```
+
+Yeah, that's right. Egyptian curly braces (you can change that if you want).
+
 ## Installation
 
 Add this line to your application's Gemfile:
