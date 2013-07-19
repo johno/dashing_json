@@ -1,12 +1,14 @@
-# DashingJson
+# Dashing JSON
 
-TODO: Write a gem description
+Make your json absolutely dashing in your rails views.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'dashing_json'
+```ruby
+gem 'dashing_json'
+```
 
 And then execute:
 
@@ -16,9 +18,44 @@ Or install it yourself as:
 
     $ gem install dashing_json
 
+### Next, you need to require the `.js.coffee` and `.css.scss` assets:
+
+If you're using sprockets, add the following to your `application.css`:
+
+    *= require dashing_json
+
+If you're using an `application.css.scss` file:
+
+```scss
+@import "dashing_json";
+```
+
+And, include the scripts with the following in your `application.js`
+
+    *= require dashing_json
+
 ## Usage
 
-TODO: Write usage instructions here
+No, you simply need to instantiate the json blob in you controller:
+
+```ruby
+class ModelController < ApplicationController
+
+# ...
+  def show
+    @model = Model.find(params[:id])
+    @json_blob = get_json_blob(@model)
+  end
+#...
+```
+
+And, then call the `dashing_json` method in your view:
+
+```erb
+<%= dashing_json(@json_blob) %>
+```
+
+That's it, your json is now dashing.
 
 ## Contributing
 
