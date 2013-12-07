@@ -9,7 +9,7 @@ $dashing-json-boolean-color: #444;
 .dashing-json-parsed li.boolean,
 .dashing-json-parsed li.number { display: inline; }
 
-.dashing-json-parsed li.key     { color: $dashing-json-key-color; font-weight: bold; }
-.dashing-json-parsed li.string  { color: $dashing-json-string-color; }
-.dashing-json-parsed li.number  { color: $dashing-json-number-color; }
+.dashing-json-parsed li.key     { color: $dashing-json-key-color;     }
+.dashing-json-parsed li.string  { color: $dashing-json-string-color;  }
+.dashing-json-parsed li.number  { color: $dashing-json-number-color;  }
 .dashing-json-parsed li.boolean { color: $dashing-json-boolean-color; }
