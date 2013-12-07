@@ -3,13 +3,13 @@ $dashing-json-string-color: #666;
 $dashing-json-number-color: #222;
 $dashing-json-boolean-color: #444;
 
-.dashing-json .key,
-.dashing-json .null,
-.dashing-json .string,
-.dashing-json .boolean,
-.dashing-json .number { display: inline; }
+.dashing-json-parsed li.key,
+.dashing-json-parsed li.null,
+.dashing-json-parsed li.string,
+.dashing-json-parsed li.boolean,
+.dashing-json-parsed li.number { display: inline; }
 
-.dashing-json .key     { color: $dashing-json-key-color; font-weight: bold; }
-.dashing-json .string  { color: $dashing-json-string-color; }
-.dashing-json .number  { color: $dashing-json-number-color; }
-.dashing-json .boolean { color: $dashing-json-boolean-color; }
+.dashing-json-parsed li.key     { color: $dashing-json-key-color; font-weight: bold; }
+.dashing-json-parsed li.string  { color: $dashing-json-string-color; }
+.dashing-json-parsed li.number  { color: $dashing-json-number-color; }
+.dashing-json-parsed li.boolean { color: $dashing-json-boolean-color; }

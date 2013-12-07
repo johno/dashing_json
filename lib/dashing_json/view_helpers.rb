@@ -6,11 +6,13 @@ module DashingJson
     end
 
     def generate_html(data)
+      data = data.to_json unless data and data.is_a?(String)
+      
       <<-HTML
         <div class='dashing-json'>
           <pre>
             <ul class='dashing-json-parsed'></ul>
-            <div class='dashing-json-raw' data-dashing-json='#{ data }'></div>
+            <div class='dashing-json-raw' data-dashing-json='#{ JSON.pretty_generate(JSON.parse(data)) }'></div>
           </pre>
         </div>
       HTML
