@@ -1,12 +1,13 @@
 # Dashing JSON
 
-Make your JSON absolutely dashing in your rails views.
+Make your JSON absolutely dashing in your rails HTML views since, sometimes, you need to display a raw blob.
 
 Dashing JSON uses a `dashing-json` data element to store the JSON string, which is then parsed into a `ul` with specific `li` elements and corresponding classes: key, string, boolean, null, and number.
 
 It comes with default styling so your JSON blob is sure to look dashing right out of the box.
 
 ### Before
+
 ```
 {"data": { "key": null, "can_read": false } }
 ```
@@ -67,7 +68,7 @@ class ModelController < ApplicationController
 
   def show
     @model = Model.find(params[:id])
-    @json_blob = get_json_blob(@model)
+    @json_blob = @model.to_json
   end
 
 # ...

@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = DashingJson::VERSION
   spec.authors       = ["John Otander"]
   spec.email         = ["johnotander@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Make your JSON absolutely dashing in your rails HTML views.}
+  spec.summary       = %q{Make your JSON absolutely dashing in your rails HTML views.}
   spec.homepage      = "https://github.com/johnotander/dashing_json"
   spec.license       = "MIT"
 
