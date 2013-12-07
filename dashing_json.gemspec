@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["johnotander@gmail.com"]
   spec.description   = %q{TODO: Write a gem description}
   spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/johnotander/dashing_json"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

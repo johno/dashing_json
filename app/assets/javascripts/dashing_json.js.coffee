@@ -27,7 +27,5 @@ json =
         cls = 'null'
       else if (/[0-9]+/.test(match))
         cls = 'number'
-      else if (/}|,/).test(match)
-        return '<li class="dashing-json-breakline">' + match + '</li>'
+
       return '<li class="' + cls + '">' + match + '</li>'
-        
